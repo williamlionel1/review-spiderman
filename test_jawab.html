@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Text Assignment - Spider-Man: No Way Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 50px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .assignment-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #ffd700;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+        }
+
+        .movie-info {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        .review-container {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .paragraph {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.08);
+            border-left: 4px solid #ffd700;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .paragraph:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+        }
+
+        .paragraph:nth-child(1) { animation-delay: 0.1s; }
+        .paragraph:nth-child(2) { animation-delay: 0.2s; }
+        .paragraph:nth-child(3) { animation-delay: 0.3s; }
+
+        .paragraph-title {
+            font-weight: 600;
+            color: #ffd700;
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icon {
+            font-size: 1.4rem;
+        }
+
+        .rating {
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px;
+            background: linear-gradient(45deg, #ff6b6b, #ffd700);
+            border-radius: 20px;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .stars {
+            font-size: 2.5rem;
+            margin: 15px 0;
+            animation: sparkle 2s infinite;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes sparkle {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            50% { transform: scale(1.1) rotate(5deg); }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+                margin: 20px;
+            }
+            
+            .assignment-title {
+                font-size: 1.8rem;
+            }
+            
+            .review-container {
+                font-size: 1rem;
+            }
+        }
+
+        .print-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(45deg, #ff6b6b, #ffd700);
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .print-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 107, 107, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="assignment-title">📝 Review Text Assignment</h1>
+            <p class="movie-info">Spider-Man: No Way Home (2021) - Superhero Action Film</p>
+        </div>
+
+        <div class="review-container">
+            <!-- Paragraph 1: Plot Summary -->
+            <div class="paragraph">
+                <div class="paragraph-title">
+                    <span class="icon">🎬</span> Story Overview
+                </div>
+                <p>
+                    <strong>Spider-Man: No Way Home</strong> follows Peter Parker (Tom Holland) after his secret identity is exposed to the world by 
+                    J. Jonah Jameson. Struggling with the consequences that destroy his personal life, Peter seeks help from Doctor Strange to cast 
+                    a spell that will make everyone forget he is Spider-Man. However, the spell goes catastrophically wrong, tearing open the 
+                    multiverse and bringing dangerous villains from other Spider-Man universes—including Green Goblin, Doctor Octopus, and Electro.
+                </p>
+            </div>
+
+            <!-- Paragraph 2: Strengths & Highlights -->
+            <div class="paragraph">
+                <div class="paragraph-title">
+                    <span class="icon">⭐</span> What Makes It Great
+                </div>
+                <p>
+                    The film delivers breathtaking action sequences with groundbreaking visual effects that bring the multiverse to life. What truly 
+                    sets it apart is the emotional depth and nostalgic fan service, as it reunites actors from previous Spider-Man franchises in 
+                    a heartfelt tribute to 20 years of Spider-Man cinema. Tom Holland delivers his best performance yet as Peter Parker, perfectly 
+                    balancing humor, vulnerability, and heroism, while the returning villains are given meaningful character arcs that elevate them 
+                    beyond typical antagonists.
+                </p>
+            </div>
+
+            <!-- Paragraph 3: Recommendation -->
+            <div class="paragraph">
+                <div class="paragraph-title">
+                    <span class="icon">✅</span> Final Verdict
+                </div>
+                <p>
+                    <em>Spider-Man: No Way Home</em> is a triumphant superhero spectacle that masterfully blends high-stakes action, genuine emotion, 
+                    and clever multiverse storytelling. It's not just a movie—it's a love letter to Spider-Man fans everywhere. With its perfect mix 
+                    of thrills, laughs, and tears, this film earns a solid <strong>9.5/10</strong> and comes highly recommended for anyone who loves 
+                    superhero films or great storytelling.
+                </p>
+            </div>
+        </div>
+
+        <div class="rating">
+            <div>Overall Rating</div>
+            <div class="stars">★★★★★</div>
+            <div>9.5/10 - MUST WATCH!</div>
+        </div>
+    </div>
+
+    <button class="print-btn" onclick="window.print()">🖨️ Print/Save Assignment</button>
+
+    <script>
+        // Add subtle entrance animation for the print button
+        window.addEventListener('load', () => {
+            const btn = document.querySelector('.print-btn');
+            btn.style.transform = 'scale(0)';
+            btn.style.opacity = '0';
+            
+            setTimeout(() => {
+                btn.style.transition = 'all 0.5s ease';
+                btn.style.transform = 'scale(1)';
+                btn.style.opacity = '1';
+            }, 500);
+        });
+
+        // Smooth scroll prevention
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+            });
+        });
+    </script>
+</body>
+</html>
